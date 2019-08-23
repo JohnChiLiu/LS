@@ -28,13 +28,10 @@
 # Algorithm:
 # string_to_signed_integer method
 
-# 1. initialize a variable 'sign' with an empty string.
-# 2. start an if..else statement
-#   a1. if first character of string is '-', use slice method to modify string and add it to 'sign'
-#   a2. concatenate 'sign' with 'string_to_integer' method on the string to get the return value and concatenante. 
-#   b1. if first character of string is '+', use slice method to modify string.
-#   b2. run 'string_to_integer'
-#   c1. else, just run 'string_to_integer'
+# 1. create a case..when statement for the first character of the string.
+# 2. If first character of string is '-', then return -string_to_integer(string[1..-1]) we start at 1 because we are not including the sign
+# 3. If first character of string is '+', then return string_to_integer(string[1..-1]) we start at 1 because we are not including the sign
+# 4. else return string_to_integer(string)
 
 def string_to_signed_integer(string)
   case string[0]

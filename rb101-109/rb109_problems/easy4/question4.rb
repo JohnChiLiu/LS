@@ -35,7 +35,7 @@
 
 # 1. Create an if else statement that is divided in 2 branches depending on input year
 #   a. if input is less than 1752, any integer divisible by 4 is a leap year
-#   b if input is greater than or equal to 1752, a leap year is one that is divisble by 4 but not 100. and divisible by both 100 and 400.
+#   b. if input is greater than or equal to 1752, a leap year is one that is divisble by 4 but not 100. and divisible by both 100 and 400.
 
 # def leap_year?(year)
 #   if year < 1752 && year % 4 == 0

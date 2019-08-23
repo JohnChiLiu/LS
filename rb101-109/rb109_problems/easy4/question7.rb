@@ -28,8 +28,8 @@
 # 1. create a hash table with every single digit in string form as keys and corresponding digit as integer form as values
 # 2. invoke chars method on string and set result to 'characters' variable
 # 3. invoke map method on characters and set it to 'result'
-# 4. within the do..end block of the map method above, invoke select method on hash, and have a condition if character from 'characters' is a key, return the values
-# 5. Use join method on result
+# 4. within the do..end block of the map method above, set hash[char] as return value
+# 5. Use inject method on result
 
 def string_to_integer(string)
   hash = {

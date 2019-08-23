@@ -28,7 +28,7 @@
 # p real_palindrome? method
 
 # 1. call downcase method on string argument.
-# 2. call gsub! method and substitute out all nonalphanumeric
+# 2. call gsub method and substitute out all nonalphanumeric
 # 3. determine if string == string.reverse as last line of code
 
 def real_palindrome?(string)

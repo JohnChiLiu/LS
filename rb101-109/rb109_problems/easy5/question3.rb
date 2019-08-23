@@ -1,6 +1,13 @@
 # Question:
 # Write 2 methods that take an input of time of day and outputs the number of minutes it is before or after midnight.
 
+# after_midnight('00:00') == 0
+# before_midnight('00:00') == 0
+# after_midnight('12:34') == 754
+# before_midnight('12:34') == 686
+# after_midnight('24:00') == 0
+# before_midnight('24:00') == 0
+
 # Input vs Output:
 # Input: Time in string format (hh:mm)
 # Output: Minutes (integer)
