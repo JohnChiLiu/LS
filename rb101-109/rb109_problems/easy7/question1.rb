@@ -27,28 +27,24 @@ Implicit:
 Algorithm:
 interleave method with inputs arr1 and arr2
 
-1) initialize variable 'counter_1' with integer value 0
-2) initialize variable 'counter_2' with integer value 0
-3) initialize variable 'result' with empty array
-4) initialize a loop with do..end block alongside
-a. push array[counter_1] into 'result'
-b. push array[counter_2] into 'result'
-c. invoke += 1 to counter_1
-d. invoke += 1 to counter_2
-e. break if counter_1 or counter_2 is equal to the size of arr1
-5) return 'result'
+1) initialize variable 'counter' with integer value 0
+2) initialize variable 'result' with empty array
+3) initialize a loop with do..end block alongside
+a. push array[counter] into 'result'
+b. push array[counter] into 'result'
+c. invoke += 1 to counter
+e. break if counter is equal to the size of arr1 or counter is equal to size of arr2
+4) return 'result'
 
 def interleave(arr1, arr2)
-  counter_1 = 0
-  counter_2 = 0
+  counter
   result = []
 
   loop do
-    result << arr1[counter_1]
-    result << arr2[counter_2]
-    counter_1 += 1
-    counter_2 += 1
-    break if counter_1 == arr1.size
+    result << arr1[counter]
+    result << arr2[counter]
+    counter += 1
+    break if counter == arr1.size || counter == aarr2.size
   end
 
   result

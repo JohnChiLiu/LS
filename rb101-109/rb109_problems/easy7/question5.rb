@@ -32,7 +32,7 @@ Algorithm:
 staggered_case method
 
 1) initialize variable 'result' with empty array
-2) invoke split('') method on string input, which would create an array of characters and non-characters
+2) invoke chars method on string input, which would create an array of characters and non-characters
 3) in the same line of code, invoke each_with_index
 4) if index.even? or index % 2 == 0
    a. result << char.upcase
@@ -42,7 +42,7 @@ staggered_case method
 
 def staggered_case(string)
   result = []
-  string.split('').each_with_index do |letter, idx|
+  string.chars.each_with_index do |letter, idx|
     if idx % 2 == 0
       result << letter.upcase
     else
