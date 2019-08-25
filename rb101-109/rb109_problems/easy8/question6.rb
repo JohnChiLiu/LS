@@ -19,8 +19,7 @@ Explicit:
 
 Algorithm:
 def fizzbuzz(num1, num2)
-  array = (num1..num2).to_a
-  array.each do |num|
+  [num1..num2].each do |num|
     if num % 3 == 0 && num % 5 == 0
       puts 'fizzbuzz'
     elsif num % 3 == 0 && num % 5 != 0
