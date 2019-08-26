@@ -38,3 +38,13 @@ def repeater(string)
   end
   result.join('')
 end
+
+or
+
+def repeater(string)
+  result = []
+  string.chars.each do |char|
+    result << char << char
+  end
+  result.join('')
+end
