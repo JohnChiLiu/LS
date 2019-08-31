@@ -11,3 +11,37 @@ letter_percentages('AbCd +Ef') == { lowercase: 37.5, uppercase: 37.5, neither: 2
 letter_percentages('123') == { lowercase: 0, uppercase: 0, neither: 100 }
 
 Question:
+Write a method that takes a string and returns its percentage in the given string in a key value pair format.
+
+Input vs Output:
+Input: string
+Output: hash
+
+Explicit vs Implicit Rules:
+Explicit:
+1) keys are split into three ategories: lowercase, uppercase, and neither
+Implicit:
+N/A 
+
+Data Structure:
+1) create a hash, then manipulate contents within hash
+
+Algorithm:
+1) intialize an empty hash called 'total'
+2) count how many lowercase letters there are in 'string' and set it to total[:lowercase]
+3) count how many uppercase letters there are in 'string' and set it to total[:uppercase]
+4) count how many non lowercase / uppercase letters there are in 'string' and set it to total[:neither]
+5) iterate through 'total', value should be v = ((v / string.size.to_f) * 100)
+
+def letter_percentages(string)
+  total = {}
+
+  total[:lowercase] = string.count('a-z')
+  total[:uppercase] = string.count('A-Z')
+  total[:neither] = string.count('^A-Za-z')
+
+  total.each do |k,v|
+    total[k] = (v / string.size.to_f) * 100
+  end
+  total
+end
