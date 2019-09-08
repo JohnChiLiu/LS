@@ -61,13 +61,13 @@ def diamond(num)
   stars = 1
 
   while space > 0
-    puts (space * ' ') + stars * '*' + (space * ' ')
+    puts (space * ' ') + stars * '*' 
     space -= 1
     stars += 2
   end
 
   while stars > 0
-    puts (space * ' ') + stars * '*' + (space * ' ')
+    puts (space * ' ') + stars * '*'
     space += 1
     stars -= 2
   end
