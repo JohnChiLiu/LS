@@ -39,3 +39,18 @@ def uppercase?(string)
   end
   return true
 end
+
+9/7/2019 solution
+
+def uppercase?(str)
+  counter = true
+  str.chars.each do |char|
+      if char =~ /[a-zA-Z]/
+          if char != char.upcase
+              counter = !counter
+              break
+          end
+      end
+  end
+  return counter
+end
